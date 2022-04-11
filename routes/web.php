@@ -18,6 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/getDepartamento/{division_id}', 'HomeController@getDepartamento')->name('getDepartamento');
+Route::get('/getAsignatura/{depto_id}', 'HomeController@getAsignatura')->name('getAsignatura');
+
+Route::post('/resultados', 'HomeController@obtenerResultados')->name('resultados');
+Route::get('/resultados', 'HomeController@mostrarResultados')->name('mostrarResultados');
 
 Route::post('/sadfi', 'SadfiController@postGen');
 Route::post('/genvsgen', 'SadfiController@postGenVsGen');

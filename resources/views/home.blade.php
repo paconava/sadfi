@@ -1,108 +1,175 @@
 @extends('layouts.app')
-
+@section('xtrajs')
+<link href="css/material-bootstrap-wizard.css" rel="stylesheet" />
+@endsection
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Dashboard</div>
-
                 <div class="card-body">
                     @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
                     </div>
                     @endif
-                    <div class="row">   
-                        <div class="col-md-6">
-                            Escolaridad máxima de los padres:
-                            <br>
-                            <form class="form-group" method="POST" action="{{ url('/sadfi') }}">
-                                {!! csrf_field() !!}
-                                <select name="generacion" class="form-control">
-                                    <option value="" selected>-- Seleccione una opción --</option>
-                                    <option value="20101">2010-1</option>
-                                    <option value="20111">2011-1</option>
-                                    <option value="20121">2012-1</option>
-                                    <option value="20131">2013-1</option>
-                                    <option value="20141">2014-1</option>
-                                    <option value="20151">2015-1</option>
-                                    <option value="20161">2016-1</option>
-                                    <option value="20171">2017-1</option>
-                                    <option value="20181">2018-1</option>
-                                    <option value="20191">2019-1</option>
-                                </select>
-                                <div align="center" style="margin-top: 20px;">
-                                    <button type="submit" class="btn btn-primary btn-lg">Aceptar</button>
-                                </div>
-                            </form>
-                            <hr>
-                            Lo mismo gen vs gen
-                            <br>
-                            <form class="form-group" method="POST" action="{{ url('/genvsgen') }}">
-                                {!! csrf_field() !!}
-                                <select name="cual" class="form-control">
-                                    <option value="" selected>-- Seleccione una opción --</option>
-                                    <option value="p">Padre</option>
-                                    <option value="m">Madre</option>
-                                </select>
-                                <select name="genvsgen1" class="form-control">
-                                    <option value="" selected>-- Seleccione una opción --</option>
-                                    <option value="20101">2010-1</option>
-                                    <option value="20111">2011-1</option>
-                                    <option value="20121">2012-1</option>
-                                    <option value="20131">2013-1</option>
-                                    <option value="20141">2014-1</option>
-                                    <option value="20151">2015-1</option>
-                                    <option value="20161">2016-1</option>
-                                    <option value="20171">2017-1</option>
-                                    <option value="20181">2018-1</option>
-                                    <option value="20191">2019-1</option>
-                                </select>
-                                <select name="genvsgen2" class="form-control">
-                                    <option value="" selected>-- Seleccione una opción --</option>
-                                    <option value="20101">2010-1</option>
-                                    <option value="20111">2011-1</option>
-                                    <option value="20121">2012-1</option>
-                                    <option value="20131">2013-1</option>
-                                    <option value="20141">2014-1</option>
-                                    <option value="20151">2015-1</option>
-                                    <option value="20161">2016-1</option>
-                                    <option value="20171">2017-1</option>
-                                    <option value="20181">2018-1</option>
-                                    <option value="20191">2019-1</option>
-                                </select>
-                                <div align="center" style="margin-top: 20px;">
-                                    <button type="submit" class="btn btn-primary btn-lg">Aceptar</button>
-                                </div>
-                            </form>
-
-                        </div>
-                        <div class="col-md-6 col-md-offset-6">
-                            EXPELE por Num Cta:
-                            <br>
-                            <form class="form-group" method="POST" action="{{ url('/expele') }}">
-                                {!! csrf_field() !!}
-                                <input type="text" name="num_cta" maxlength="9" />
-                                <div align="center" style="margin-top: 20px;">
-                                    <button type="submit" class="btn btn-primary btn-lg">Aceptar</button>
-                                </div>
-                            </form>
-                            
-                        </div>
+                    @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
                     </div>
+                    @endif
+                    <!--      Wizard container        -->
+                    <div class="wizard-container">
+                        <div class="card wizard-card" data-color="red" id="wizard">
+                            <form class="form-group" method="POST" action="{{ route('resultados') }}">
+                            {!! csrf_field() !!}
+                                <div class="wizard-header">
+                                    <h3 class="wizard-title">
+                                        Programa de estudios
+                                    </h3>
+                                    <h5>Opinión de los profesores por asignatura.</h5>
+                                </div>
+                                <div class="wizard-navigation">
+                                    <ul>
+                                        <li><a href="#details" data-toggle="tab">División</a></li>
+                                        <li><a href="#captain" data-toggle="tab">Departamento</a></li>
+                                        <li><a href="#description" data-toggle="tab">Asignatura</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane" id="details">
+                                        <h4 class="info-text">Seleccione la división</h4>
+                                        <div class="row">
+                                            <div class="col-md-6 offset-md-3">
+                                                <select id="division-dropdown" name="division" class="form-control" required>
+                                                    <option value="" selected>-- Seleccione una opción --</option>
+                                                    @foreach($divisiones as $div)
+                                                    <option value="{{$div->id}}">{{$div->siglas}} - {{$div->nombre}}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="captain">
+                                        <h4 class="info-text">Seleccione el departamento</h4>
+                                        <div class="row">
+                                            <div class="col-md-6 offset-md-3">
+                                                <select id="departamento-dropdown" name="departamento" class="form-control" required>
+                                                    <option value="" selected>-- Seleccione una opción --</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="description">
+                                        <h4 class="info-text">Seleccione la asignatura</h4>
+                                        <div class="row">
+                                            <div class="col-md-6 offset-md-3">
+                                                <select id="asignatura-dropdown" name="asignatura" class="form-control" required>
+                                                    <option value="" selected>-- Seleccione una opción --</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wizard-footer">
+                                    <div class="pull-right">
+                                        <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next' value='Siguiente' />
+                                        <input type='submit' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Aceptar' />
+                                    </div>
+                                    <div class="pull-left">
+                                        <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Anterior' />
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div> <!-- wizard container -->
                 </div>
             </div>
-@if ($errors->any())
-<div class="alert alert-danger">
-    <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-</div>
-@endif
         </div>
     </div>
 </div>
+@endsection
+@section('js')
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.bootstrap.js" type="text/javascript"></script>
+
+    <!--  Plugin for the Wizard -->
+    <script src="js/material-bootstrap-wizard.js"></script>
+    <!--  More information about jquery.validate here: http://jqueryvalidation.org/  -->
+    <script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#loader').hide();
+        $.ajaxSetup({
+          beforeSend: function() {
+             $('#loader').show();
+          },
+          complete: function(){
+             $('#loader').hide();
+          },
+          success: function() {}
+        });
+        $('#division-dropdown').change(function () {
+            var id = $(this).val();
+            console.log(id);
+            if(id == ""){
+                return
+            }
+            $('#departamento-dropdown').find('option').not(':first').remove();
+            $.ajax({
+                url:"getDepartamento/"+id,
+                type:'get',
+                dataType:'json',
+                success:function (response) {
+                    var len = 0;
+                    if (response.data != null) {
+                        len = response.data.length;
+                    }
+                    if (len>0) {
+                        for (var i = 0; i<len; i++) {
+                            var id = response.data[i].id;
+                            var name = response.data[i].nombre;
+                            var option = "<option value='"+id+"'>"+name+"</option>"; 
+                            $("#departamento-dropdown").append(option);
+                        }
+                    }
+                }
+            })
+        });
+
+        $('#departamento-dropdown').change(function () {
+            var id = $(this).val();
+            console.log(id);
+            if(id == ""){
+                return
+            }
+            $('#asignatura-dropdown').find('option').not(':first').remove();
+            $.ajax({
+                url:"getAsignatura/"+id,
+                type:'get',
+                dataType:'json',
+                success:function (response) {
+                    var len = 0;
+                    if (response.data != null) {
+                        len = response.data.length;
+                    }
+                    if (len>0) {
+                        for (var i = 0; i<len; i++) {
+                            var id = response.data[i].id;
+                            var name = response.data[i].nombre;
+                            var option = "<option value='"+id+"'>"+name+"</option>"; 
+                            $("#asignatura-dropdown").append(option);
+                        }
+                    }
+                }
+            })
+        });
+    });
+</script>
 @endsection
