@@ -6,80 +6,79 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
+            @if (session('status'))
+            <div class="alert alert-success" role="alert">
+                {{ session('status') }}
+            </div>
+            @endif
+            <div class="col-md-12">
+                <a href="{{route('home')}}" style="color:red;">< Volver</a>
+                <br>
+                <h3>{{$asignatura->nombre}}</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div id="columnchart_material" style="width: 800px; height: 500px;"></div> 
+                </div>
+            </div>
+            <br>
+            <div class="accordion" id="accordionExample">
+                @foreach($semestres as $sem)
+                <div class="card">
+                    <div class="card-header" id="heading{{$sem->semestre}}">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{$sem->semestre}}" aria-expanded="false" aria-controls="collapse{{$sem->semestre}}">{{$sem->semestre}}</button>
+                        </h5>
                     </div>
-                    @endif
-                    <div class="col-md-12">
-                        <a href="{{route('home')}}" style="color:red;">
-                           < Volver
-                        </a>
-                        <br>
-                        <h3>{{$asignatura->nombre}}</h3>
-                    </div>
-                    <div class="row">  
-                        <div class="col-md-6 offset-md-3">
+                    <div id="collapse{{$sem->semestre}}" class="collapse" aria-labelledby="heading{{$sem->semestre}}" data-parent="#accordionExample" style="width: 100%;">
+                        <div class="card-body">
                             <table class="table">
                                 <thead>
                                     <th>Totalmente de acuerdo</th>
                                     <th>No totalmente de acuerdo</th>
                                 </thead>
                                 <tbody>
-                                    <td>{{$pos_count}}</td>
-                                    <td>{{$neg_count}}</td>
+                                    <td>{{$sem->pos_count}}</td>
+                                    <td>{{$sem->neg_count}}</td>
                                 </tbody>
                             </table>
                             <br>
-                            <div id="chart_div"></div> 
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <center><p>
-                              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTotal" aria-expanded="false" aria-controls="collapseTotal">
-                                Respuestas para totalmente de acuerdo
-                              </button>
-                            </p>
-                            </center>
-                            <div class="collapse" id="collapseTotal">
-                              <div class="card card-body">
-                                <table class="table">
-                                    <tbody>
-                                        @foreach($pos_respuestas as $resp)
-                                        <tr><td>{{$resp->p15_just}}</td></tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <center>
-                            <p>
-                              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseParcial" aria-expanded="false" aria-controls="collapseParcial">
-                                Respuestas para no totalmente de acuerdo
-                              </button>
-                            </p>
-                            </center>
-                            <div class="collapse" id="collapseParcial">
-                              <div class="card card-body">
-                                <table class="table">
-                                    <tbody>
-                                        @foreach($neg_respuestas as $resp)
-                                        <tr><td>{{$resp->p15_just}}</td></tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                              </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTotal{{$sem->semestre}}" aria-expanded="false" aria-controls="collapseTotal{{$sem->semestre}}">Respuestas para totalmente de acuerdo</button></p>
+                                    <div class="collapse" id="collapseTotal{{$sem->semestre}}">
+                                        <div class="card card-body">
+                                            <table class="table">
+                                                <tbody>
+                                                    @foreach($sem->pos_respuestas as $resp)
+                                                    <tr><td>{{$resp->p15_just}}</td></tr>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseParcial{{$sem->semestre}}" aria-expanded="false" aria-controls="collapseParcial{{$sem->semestre}}">Respuestas para no totalmente de acuerdo</button>
+                                    <div class="collapse" id="collapseParcial{{$sem->semestre}}">
+                                        <div class="card card-body">
+                                            <table class="table">
+                                                <tbody>
+                                                    @foreach($sem->neg_respuestas as $resp)
+                                                    <tr><td>{{$resp->p15_just}}</td></tr>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
+            <hr>
             @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -97,33 +96,28 @@
 <script type="text/javascript">
 
       // Load the Visualization API and the corechart package.
-      google.charts.load('current', {'packages':['corechart']});
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+      google.charts.setOnLoadCallback(drawMaterial);
 
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.charts.setOnLoadCallback(drawChart);
+      function drawMaterial() {
+          var data = google.visualization.arrayToDataTable([
+              ['Semestre', 'Totalmente de acuerdo', 'No totalmente de acuerdo'],
+              <?php foreach ($semestres as $sem): ?>
+                  ['<?php echo $sem->semestre; ?>', <?php echo $sem->pos_count; ?>, <?php echo $sem->neg_count; ?>],
+              <?php endforeach ?>
+              ]);
 
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart() {
 
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-          ['Totalmente de acuerdo', {{$pos_count}}],
-          ['Parcialmente de acuerdo', {{$neg_count}}],
-        ]);
 
-        // Set chart options
-        var options = {
-                       'width':400,
-                       'height':300};
+          var options = {
+              chart: {
+                title: 'Programa de estudio'
+            }
+        };
 
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+</script>
 @endsection

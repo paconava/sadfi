@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Division;
 use App\Models\Departamento;
 use App\Models\Asignatura;
-use App\Models\P15;
+use App\Models\Encuesta;
+use App\Models\Semestre;
 use DB;
 
 class HomeController extends Controller
@@ -61,14 +62,19 @@ class HomeController extends Controller
         ]);
 
         $asignatura = Asignatura::where('id', $post_data['asignatura'])->first();
-        $respuestas = P15::where('depto_id',$post_data['departamento'])->where('asig_id', $asignatura->nombre)->get();
+        $respuestas = Encuesta::where('depto_id',$post_data['departamento'])->where('asignatura', $asignatura->nombre)->get(['semestre', 'p15', 'p15_just']);
+        $semestres = Semestre::get();
+        foreach($semestres as $sem) {
+            $sem['pos_count'] = $respuestas->where('p15', 1)->where('semestre', $sem->semestre)->count();
+            $sem['neg_count'] = $respuestas->where('p15', '!=', 1)->where('semestre', $sem->semestre)->count();
+            $sem['pos_respuestas'] = $respuestas->where('p15', 1)->where('semestre', $sem->semestre);
+            $sem['neg_respuestas'] = $respuestas->where('p15', '!=', 1)->where('semestre', $sem->semestre);
+        }
         $data = array(
             'asignatura' => $asignatura,
-            'pos_count' => $respuestas->where('p15', 1)->count(),
-            'neg_count' => $respuestas->where('p15', '!=', 1)->count(),
-            'pos_respuestas' => $respuestas->where('p15', 1),
-            'neg_respuestas' => $respuestas->where('p15', '!=', 1),
+            'semestres' => $semestres
         );
+        
         \Log::info($data);
         return view('resultados', $data);
     }

@@ -13,8 +13,8 @@ class SemestresSeeder extends Seeder
     public function run()
     {
         //
-        $this->crearSemestre('2021-1');
-        $this->crearSemestre('2022-1');
+        $this->crearSemestre('20211');
+        $this->crearSemestre('20221');
     }
 
     public function crearSemestre($anio) {
