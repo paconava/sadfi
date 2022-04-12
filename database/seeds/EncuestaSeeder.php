@@ -9,7 +9,8 @@ class EncuestaSeeder extends CsvSeeder
 		$this->tablename = 'encuesta';
 		$this->csv_delimiter = ';';
 		$this->timestamps = false;
-		$this->file = '/database/seeds/csvs/book.csv';
+		$this->file = '/database/seeds/csvs/book3.csv';
+		$this->encode = true;
 	}
     /**
      * Run the database seeds.
