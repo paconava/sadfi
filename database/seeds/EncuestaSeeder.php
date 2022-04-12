@@ -1,15 +1,15 @@
 <?php
 
-use Illuminate\Database\Seeder;
-use Flynsarmy\CsvSeeder\CsvSeeder;
+use JeroenZwart\CsvSeeder\CsvSeeder;
 
 class EncuestaSeeder extends CsvSeeder
 {
 	public function __construct()
 	{
-		$this->table = 'encuesta';
-		$this->csv_delimiter = '|';
-		$this->filename = 'csvs/p15.csv';
+		$this->tablename = 'encuesta';
+		$this->csv_delimiter = ';';
+		$this->timestamps = false;
+		$this->file = '/database/seeds/csvs/encuesta.csv';
 	}
     /**
      * Run the database seeds.
@@ -22,7 +22,7 @@ class EncuestaSeeder extends CsvSeeder
 		DB::disableQueryLog();
 
 		// Uncomment the below to wipe the table clean before populating
-		DB::table($this->table)->truncate();
+		DB::table($this->tablename)->truncate();
 
 		parent::run();
     }

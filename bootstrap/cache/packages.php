@@ -13,6 +13,13 @@
       0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
+  'jeroenzwart/laravel-csv-seeder' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'JeroenZwart\\CsvSeeder\\CsvSeederServiceProvider',
+    ),
+  ),
   'laravel/tinker' => 
   array (
     'providers' => 
