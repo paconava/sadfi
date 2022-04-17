@@ -1,0 +1,1 @@
+<h1>Test</h1><?php /**PATH /var/www/resources/views/pdf/invoice.blade.php ENDPATH**/ ?>

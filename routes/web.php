@@ -24,6 +24,8 @@ Route::get('/getAsignatura/{depto_id}', 'HomeController@getAsignatura')->name('g
 Route::post('/resultados', 'HomeController@obtenerResultados')->name('resultados');
 Route::get('/resultados', 'HomeController@mostrarResultados')->name('mostrarResultados');
 
+Route::post('/resultados_pdf', 'HomeController@resultadosPdf')->name('resultados_pdf');
+
 Route::post('/sadfi', 'SadfiController@postGen');
 Route::post('/genvsgen', 'SadfiController@postGenVsGen');
 Route::post('/expele', 'SadfiController@getExpele');

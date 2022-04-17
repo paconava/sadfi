@@ -13,12 +13,19 @@
             @endif
             <div class="col-md-12">
                 <a href="{{route('home')}}" style="color:red;">< Volver</a>
+                <form method="POST" action="{{route('resultados_pdf')}}" target="_blank">
+                    {{csrf_field()}}
+                    <input type="hidden" name="asignatura" value="{{$asignatura->id}}">
+                    <input type="hidden" name="departamento" value="{{$departamento}}">
+                    <input type="hidden" name="chartImg" id="chartImg" value="">
+                    <input type='submit' class='btn btn-danger btn-wd' value='Exportar a PDF' style="float:right;" />
+                </form>
                 <br>
                 <h3>{{$asignatura->nombre}}</h3>
             </div>
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <div id="columnchart_material" style="width: 600px; height: 350px;"></div> 
+                    <div id="columnchart_material" style="width: 800px; height: 500px;"></div> 
                 </div>
             </div>
             <br>
@@ -109,9 +116,31 @@
                 ['<?php echo $sem->semestre; ?>', <?php echo $sem->pos_count; ?>, <?php echo $sem->neg_count; ?>],
                 <?php endforeach ?>
                 ]);
-        var options = { chart: {} };
-        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-        chart.draw(data, google.charts.Bar.convertOptions(options));
+        var options = {
+            orientation: 'horizontal',
+            vAxis: {format: '0'},
+            series: {
+                0: { axis: 'distance' }, // Bind series 0 to an axis named 'distance'.
+                1: { axis: 'brightness' } // Bind series 1 to an axis named 'brightness'.
+            },
+            axes: {
+                x: {
+                    distance: {label: 'parsecs'}, // Bottom x-axis.
+                    brightness: {side: 'top', label: 'apparent magnitude'} // Top x-axis.
+                }
+            }
+        };
+        var chart_input = document.getElementById('chartImg');
+        var chart = new google.visualization.BarChart(document.getElementById('columnchart_material'));
+        console.log(chart);
+        
+        google.visualization.events.addListener(chart, 'ready', function () {
+            chart_input.value = chart.getImageURI();
+        });
+
+        chart.draw(data, options);
+
+
     }
 </script>
 @endsection
