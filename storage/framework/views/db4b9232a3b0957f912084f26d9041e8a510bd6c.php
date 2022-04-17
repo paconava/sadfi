@@ -78,11 +78,11 @@
                                     </div>
                                 </div>
                                 <div class="wizard-footer">
-                                    <div class="pull-right">
+                                    <div style="float: right;">
                                         <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next' value='Siguiente' />
                                         <input type='submit' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Aceptar' />
                                     </div>
-                                    <div class="pull-left">
+                                    <div style="float: left;">
                                         <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Anterior' />
                                     </div>
                                     <div class="clearfix"></div>
@@ -136,7 +136,7 @@
                         for (var i = 0; i<len; i++) {
                             var id = response.data[i].id;
                             var name = response.data[i].nombre;
-                            var option = "<option value='"+id+"'>"+name+"</option>"; 
+                            var option = "<option value='"+name+"'>"+name+"</option>"; 
                             $("#departamento-dropdown").append(option);
                         }
                     }

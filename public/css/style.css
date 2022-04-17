@@ -284,10 +284,15 @@ span.middot {
 	margin-right: auto !important;
 }
 
-.divcenter2 {
+.divcenter1 {
 	float: left !important;
-	margin-left: 20px; !important;
+	margin-left: 20px !important;
+	max-height: 100px !important;
+}
+
+.divcenter2 {
 	margin-right: auto !important;
+	max-height: 100px !important;
 }
 
 .divcenter3 {
@@ -295,6 +300,7 @@ span.middot {
 	float: right !important;
 	margin-right: 20px !important;
 	margin-left: auto !important;
+	max-height: 100px !important;
 }
 
 

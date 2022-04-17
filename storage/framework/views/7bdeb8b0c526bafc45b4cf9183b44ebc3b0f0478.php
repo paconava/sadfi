@@ -38,27 +38,21 @@
     <div id="app">
 
         <header id="header">
-            <div class="container clearfix">
+            <div class="container">
                <!-- Logo
                 ============================================= -->
-                <div id="logo" class="divcenter">
-                    
-                    <a href="http://www.unam.mx" class="standard-logo1" data-dark-logo="images/logos/unam2.png"><img class="divcenter2" src="images/logos/unam2.png" alt="UNAM" title="UNAM"></a>
-                    
-                    
-                    <a href="http://www.ingenieria.unam.mx" class="standard-logo2" data-dark-logo="images/logos/fi01.png"><img class="divcenter3" src="images/logos/fi01.png" alt="Facultad de Ingeniería" title="Facultad de Ingeniería"></a>
-                    
-                     <a href="https://www.ingenieria.unam.mx/evaluacioneducativa/index.html" class="standard-logo3" ><img  src="images/logos/logo_cee.png" alt="Coordinación de Evaluación Educativa" title="Coordinación de Evaluación Educativa"></a>
-                     <a href="https://www.ingenieria.unam.mx/evaluacioneducativa/index.html" class="standard-logo5" data-dark-logo="images/logos/logo_cee_2.png"><img  src="images/logos/logo_cee_2.png" alt="Coordinación de Evaluación Educativa" title="Coordinación de Evaluación Educativa"></a>
-                     
-                     <a href="http://www.ingenieria.unam.mx" class="standard-logo4" data-dark-logo="images/logos/fi02.png"><img  src="images/logos/fi02.png" alt="Facultad de Ingeniería" title="Facultad de Ingeniería"></a>
-                     
-                   
-                     
-                     <a href="http://www.ingenieria.unam.mx" class="standard-logo6" data-dark-logo="images/logos/fi03.png"><img  src="images/logos/fi03.png" alt="Facultad de Ingeniería" title="Facultad de Ingeniería"></a>
-                     
+                <div class="row" style="max-height: 300px !important;">
+                    <div class="col-md-6">
+                        <a href="http://www.unam.mx" data-dark-logo="images/logos/unam2.png"><img class="divcenter1" src="images/logos/unam2.png" alt="UNAM" title="UNAM"></a>
+                        
+                        
+                        <a href="http://www.ingenieria.unam.mx" data-dark-logo="images/logos/fi01.png"><img class="divcenter2" src="images/logos/fi01.png" alt="Facultad de Ingeniería"></a>
+                    </div>
+                    <div class="col-md-6">
+                         <a href="https://www.ingenieria.unam.mx/evaluacioneducativa/index.html" ><img class="divcenter3" src="images/logos/logo_cee.png" alt="Coordinación de Evaluación Educativa" title="Coordinación de Evaluación Educativa"></a>
+                    </div>
                </div><!-- #logo end --> 
-           </div>
+            </div>
         </header><!-- #header end -->
 
 

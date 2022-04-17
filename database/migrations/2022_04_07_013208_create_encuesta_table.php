@@ -16,14 +16,14 @@ class CreateEncuestaTable extends Migration
         Schema::create('encuesta', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('semestre', 5);
-            $table->unsignedBigInteger("division_id");
-            $table->unsignedBigInteger("depto_id");
+            $table->string("division");
+            $table->string("depto");
             $table->unsignedBigInteger("asig_id");
             $table->string("asignatura");
             $table->integer("grupo");
-            $table->string("tipo");
+            $table->string("tipo")->nullable();
             $table->string("curricular");
-            $table->string("rfc");
+            $table->string("rfc")->nullable();
             $table->string("p1_a", 2);
             $table->string("p1_b", 2);
             $table->string("p1_c", 2);
@@ -109,8 +109,8 @@ class CreateEncuestaTable extends Migration
             $table->text("p21")->nullable();
 
 
-            $table->foreign('division_id')->references('id')->on('divisiones');
-            $table->foreign('depto_id')->references('id')->on('departamentos');
+            // $table->foreign('division')->references('siglas')->on('divisiones');
+            // $table->foreign('depto')->references('nombre')->on('departamentos');
             //$table->foreign('asig_id')->references('id')->on('asignaturas');
         });
     }

@@ -43,7 +43,8 @@ class HomeController extends Controller
 
     public function getAsignatura($depto_id)
     {
-        $data = Asignatura::where('depto_id',$depto_id)->get();
+        $depto = Departamento::where('nombre', $depto_id)->first();
+        $data = Asignatura::where('depto_id',$depto->id)->get();
 
         \Log::info($data);
         return response()->json(['data' => $data]);
@@ -62,13 +63,14 @@ class HomeController extends Controller
         ]);
 
         $asignatura = Asignatura::where('id', $post_data['asignatura'])->first();
-        $respuestas = Encuesta::where('depto_id',$post_data['departamento'])->where('asignatura', $asignatura->nombre)->get(['semestre', 'p15', 'p15_just']);
+        $respuestas = Encuesta::where('depto',$post_data['departamento'])->where('asignatura', $asignatura->nombre)->get(['semestre', 'p15', 'p15_just']);
         $semestres = Semestre::get();
         foreach($semestres as $sem) {
             $sem['pos_count'] = $respuestas->where('p15', 1)->where('semestre', $sem->semestre)->count();
             $sem['neg_count'] = $respuestas->where('p15', '!=', 1)->where('semestre', $sem->semestre)->count();
             $sem['pos_respuestas'] = $respuestas->where('p15', 1)->where('semestre', $sem->semestre);
             $sem['neg_respuestas'] = $respuestas->where('p15', '!=', 1)->where('semestre', $sem->semestre);
+            $sem->semestre = substr($sem->semestre, 0, 4)."-".$sem->semestre[4];
         }
         $data = array(
             'asignatura' => $asignatura,
