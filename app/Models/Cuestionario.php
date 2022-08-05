@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cuestionario extends Model
 {
-    protected $connection = 'sadfi';
     protected $table = 'c_sociodemografico';
 	public $timestamps = false;
 	protected $primaryKey = 'id';

@@ -1,0 +1,1008 @@
+es_pregunta;es_respuesta;valor;texto;id_padre
+1;0;1;Estado civil;NULL
+0;1;1;Soltero (a);1
+0;1;2;Casado (a);1
+0;1;3;Otro;1
+1;0;2;Nacionalidad;NULL
+0;1;1;Mexicana;5
+0;1;2;Otra;5
+1;0;3;Sexo;NULL
+0;1;1;Masculino;8
+0;1;2;Femenino;8
+1;0;4;¿En qué tipo de escuela estudiaste la primaria?;NULL
+0;1;1;Pública en Zona Metropolitana de la Ciudad de México;11
+0;1;2;Privada en Zona Metropolitana de la Ciudad de México;11
+0;1;3;Abierta en Zona Metropolitana de la Ciudad de México;11
+0;1;4;Pública fuera de la Zona Metropolitana de la Ciudad de México;11
+0;1;5;Privada fuera de la Zona Metropolitana de la Ciudad de México;11
+0;1;6;Abierta fuera de la Zona Metropolitana de la Ciudad de México;11
+0;1;7;Institución en el extranjero;11
+1;0;5;¿En qué tipo de escuela estudiaste la secundaria?;NULL
+0;1;1;Pública en Zona Metropolitana de la Ciudad de México;19
+0;1;2;Privada en Zona Metropolitana de la Ciudad de México;19
+0;1;3;Abierta en Zona Metropolitana de la Ciudad de México;19
+0;1;4;Pública fuera de la Zona Metropolitana de la Ciudad de México;19
+0;1;5;Privada fuera de la Zona Metropolitana de la Ciudad de México;19
+0;1;6;Abierta fuera de la Zona Metropolitana de la Ciudad de México;19
+0;1;7;Institución en el extranjero;19
+1;0;6;¿Cuál fue tu promedio de calificaciones en la primaria?;NULL
+0;1;1;Entre 6.0 y 6.5;27
+0;1;2;Entre 6.6 y 7.0;27
+0;1;3;Entre 7.1 y 7.5;27
+0;1;4;Entre 7.6 y 8.0;27
+0;1;5;Entre 8.1 y 8.5;27
+0;1;6;Entre 8.6 y 9.0;27
+0;1;7;Entre 9.1 y 9.5;27
+0;1;8;Entre 9.6 y 10.0;27
+0;1;9;No lo sabe;27
+1;0;7;¿Cuál fue tu promedio de calificaciones en la secundaria?;NULL
+0;1;1;Entre 6.0 y 6.5;37
+0;1;2;Entre 6.6 y 7.0;37
+0;1;3;Entre 7.1 y 7.5;37
+0;1;4;Entre 7.6 y 8.0;37
+0;1;5;Entre 8.1 y 8.5;37
+0;1;6;Entre 8.6 y 9.0;37
+0;1;7;Entre 9.1 y 9.5;37
+0;1;8;Entre 9.6 y 10.0;37
+0;1;9;No lo sabe;37
+1;0;8;¿Cuál fue tu promedio de calificaciones en el bachillerato?;NULL
+0;1;1;Entre 6.0 y 6.5;47
+0;1;2;Entre 6.6 y 7.0;47
+0;1;3;Entre 7.1 y 7.5;47
+0;1;4;Entre 7.6 y 8.0;47
+0;1;5;Entre 8.1 y 8.5;47
+0;1;6;Entre 8.6 y 9.0;47
+0;1;7;Entre 9.1 y 9.5;47
+0;1;8;Entre 9.6 y 10.0;47
+0;1;9;No lo sabe;47
+1;0;9;¿En qué institución estudiaste el bachillerato?;NULL
+0;1;1;Escuela Nacional Preparatoria de la UNAM (ENP);57
+0;1;2;Colegio de Ciencias y Humanidades de la UNAM (CCH);57
+0;1;3;Colegio de Bachilleres en ZMCM* (Col. Bach.);57
+0;1;4;Bachillerato Tecnológico en ZMCM* (CECYT, CEBETIS, CBETA u otro);57
+0;1;5;Institución Privada en la ZMCM*;57
+0;1;6;Institución Pública fuera de la ZMCM* (Col. Bach., CBETIS, preparatorias de los estados, etc.);57
+0;1;7;Institución Privada fuera de la ZMCM*;57
+0;1;8;Preparatoria Abierta (SEP o Col. Bach);57
+0;1;9;Institución en el extranjero;57
+0;1;10;Otra;57
+1;0;10;En caso de haber estudiado en la ENP de la UNAM, indica en qué plantel;NULL
+0;1;1;ENP Plantel 1 "Gabino Barreda";68
+0;1;2;ENP Plantel 2 "Erasmo Castellano Quinto";68
+0;1;3;ENP Plantel 3 "Justo Sierra";68
+0;1;4;ENP Plantel 4 "Vidal Castañeda y Nájera";68
+0;1;5;ENP Plantel 5 "José Vasconcelos";68
+0;1;6;ENP Plantel 6 "Antonio Caso";68
+0;1;7;ENP Plantel 7 "Ezequiel A. Chávez";68
+0;1;8;ENP Plantel 8 "Miguel E. Shults";68
+0;1;9;ENP Plantel 9 "Pedro de Alba";68
+0;1;10;no aplica;68
+1;0;11;En caso de haber estudiado en el CCH de la UNAM, indica en qué plantel;NULL
+0;1;1;CCH Plantel Azcapotzalco;79
+0;1;2;CCH Plantel Naucalpan;79
+0;1;3;CCH Plantel Oriente;79
+0;1;4;CCH Plantel Sur;79
+0;1;5;CCH Plantel Vallejo;79
+0;1;6;No aplica;79
+1;0;12;¿En cuántos años cursaste el bachillerato?;NULL
+0;1;1;En menos de 3 años;86
+0;1;2;En de 3 años;86
+0;1;3;En 4 años ininterrumpidos;86
+0;1;4;En 4 años interrumpidos;86
+0;1;5;En 5 años ininterrumpidos;86
+0;1;6;En 5 años interrumpidos;86
+0;1;7;En más de 5 años;86
+1;0;13;Respecto a tu ingreso a la Facultad de Ingeniería;NULL
+0;1;1;Ingresas por pase reglamentado y a la carrera que elegiste como primera opción;94
+0;1;2;Ingresas por pase reglamentado y a la carrera que elegiste como segunda opción;94
+0;1;3;Ingresas por pase reglamentado y a una carrera que no elegiste como primera o segunda opción;94
+0;1;4;Ingresas por concurso de selección, habiendo concursado una sola vez;94
+0;1;5;Ingresas por concurso de selección, habiendo concursado dos veces por la misma carrera;94
+0;1;6;Ingresas por concurso de selección, habiendo concursado dos veces por carreras distintas;94
+0;1;7;Ingresas por concurso de selección, habiendo concursado más de dos veces;94
+1;0;14;¿Cuál es la razón principal por la que elegiste la carrera de Ingeniería?;NULL
+0;1;1;Porque es una carrera que te ofrece un buen futuro económico y social;102
+0;1;2;Porque es una carrera necesaria para el desarrollo del país;102
+0;1;3;Porque tus papás, tus hermanos o profesores te alientan a estudiarla;102
+0;1;4;Porque te consideras una persona creativa y sistemática;102
+0;1;5;Porque siempre has sido bueno en matemáticas;102
+0;1;6;Porque siempre has tenido facilidad para actividades como examinar, armar, arreglar, etc.;102
+0;1;7;Porque conoces ingenieros y te consideras afín a ellos;102
+0;1;8;Porque conoces cuáles son los campos de acción del ingeniero y te identificas con ellos;102
+0;1;9;En el fondo no sabes cuál es la razón principal del por qué la elegiste;102
+0;1;10;En realidad no es la carrera que elegiste;102
+1;0;15;¿Cuál es la razón principal por la que elegiste la UNAM para estudiar Ingeniería?;NULL
+0;1;1;Porque brinda la oportunidad para estudiar y trabajar;113
+0;1;2;Porque ahí han estudiado tus familiares;113
+0;1;3;Porque es una institución accesible a tu economía familiar;113
+0;1;4;Porque provienes directamente de un sistema de bachillerato;113
+0;1;5;Porque posee buenas instalaciones, laboratorios, etc.;113
+0;1;6;Porque te identificas con sus valores y principios;113
+0;1;7;Porque ahí obtendrás oportunidades para trabajar en el futuro;113
+0;1;8;Porque te identificas con sus estudiantes;113
+1;0;16;Al terminar la carrera lo que más te gustaría es;NULL
+0;1;1;Conseguir un trabajo en la ciudad de México;122
+0;1;2;Conseguir un trabajo fuera de la ciudad de México;122
+0;1;3;Generar tu propia empresa;122
+0;1;4;Estudiar un posgrado en el país;122
+0;1;5;Estudiar un posgrado en el extranjero;122
+0;1;6;Estudiar otra carrera;122
+0;1;7;Dar clases;122
+0;1;8;Dedicarte a la investigación;122
+0;1;9;Viajar;122
+0;1;10;Otra;122
+1;0;17;Las perspectivas de empleo de tu carrera en Ingeniería son;NULL
+0;1;1;Muy buenas;133
+0;1;2;Buenas;133
+0;1;3;Regulares;133
+0;1;4;Malas;133
+0;1;5;Muy malas;133
+0;1;6;No sabes;133
+1;0;18;Tu formación en matemáticas, necesaria para estudiar Ingeniería, la consideras;NULL
+0;1;1;Excelente;140
+0;1;2;Muy buena;140
+0;1;3;Buena;140
+0;1;4;Suficiente;140
+0;1;5;Insuficiente;140
+1;0;19;Tu orientación vocacional está;NULL
+0;1;1;Bien definida y corresponde plenamente a la carrera en que has sido admitido (a);146
+0;1;2;Bien definida y corresponde parcialmente a la carrera en que has sido admitido (a);146
+0;1;3;Bien definida, pero no corresponde a la carrera en que has sido admitido (a);146
+0;1;4;No bien definida;146
+0;1;5;Definitivamente en duda;146
+1;0;20;Considerando tu vida escolar, ¿cómo te calificarías como estudiante?;NULL
+0;1;1;Excelente;152
+0;1;2;Muy bueno;152
+0;1;3;Bueno (a);152
+0;1;4;Regular;152
+0;1;5;Malo (a);152
+1;0;21;En promedio, el tiempo al día que usas computadora es;NULL
+0;1;1;Máximo una hora;158
+0;1;2;Entre una y dos horas;158
+0;1;3;Entre dos y tres horas;158
+0;1;4;Más de tres horas;158
+0;1;5;No utilizas la computadora;158
+1;0;22;En un día entre semana, aproximadamente ¿cuánto tiempo estás conectado a internet, considerando todas las veces que entras a consultar algo?;NULL
+0;1;1;Hasta 1 hora;164
+0;1;2;De 2 a 3 horas;164
+0;1;3;De 4 a 5 horas;164
+0;1;4;De 6 a 7 horas;164
+0;1;5;De 8 a 9 horas;164
+0;1;6;Más de 9 horas;164
+1;0;23;Responde a lo siguiente;NULL
+0;0;1;¿Utilizas herramientas de mensajería instantáneas en internet?;171
+0;1;1;Sí;172
+0;1;2;No;172
+0;0;2;¿Utilizas redes sociales en internet?;171
+0;1;1;Sí;175
+0;1;2;No;175
+0;0;3;¿Conoces y utilizas tecnologías de internet inmersivas? (realidad aumentada);171
+0;1;1;Sí;178
+0;1;2;No;178
+0;0;4;¿Utilizas Second Life?;171
+0;1;1;Sí;181
+0;1;2;No;181
+0;0;5;¿Utilizas manejador de base de datos?;171
+0;1;1;Sí;184
+0;1;2;No;184
+0;0;6;¿Utilizas paquetería estadística?;171
+0;1;1;Sí;187
+0;1;2;No;187
+0;0;7;Utilizas software para dibujo;171
+0;1;1;Sí;190
+0;1;2;No;190
+0;0;8;Utilizas algún software para matemáticas;171
+0;1;1;Sí;193
+0;1;2;No;193
+0;0;9;Manejas algún lenguaje de programación;171
+0;1;1;Sí;196
+0;1;2;No;196
+1;0;24;Respecto a tus padres;NULL
+0;1;1;Viven ambos, juntos;199
+0;1;2;Viven ambos, separados;199
+0;1;3;Viven ambos, divorciados;199
+0;1;4;Vive el padre, madre finada;199
+0;1;5;Vive la madre, padre finado;199
+0;1;6;Ambos finados;199
+1;0;25;¿Cuántos (as) hermanos (as) tienes?;NULL
+0;1;1;Ninguno (a);206
+0;1;2;Uno;206
+0;1;3;Dos;206
+0;1;4;Tres;206
+0;1;5;Cuatro;206
+0;1;6;Cinco;206
+0;1;7;Más de cinco;206
+1;0;26;Señala cuál es el nivel máximo de estudios de tu padre;NULL
+0;1;1;Sin instrucción formal;214
+0;1;2;Primaria sin terminar;214
+0;1;3;Primaria terminada;214
+0;1;4;Secundaria (o equivalente) terminada;214
+0;1;5;Bachillerato (o equivalente) terminada;214
+0;1;6;Inició licenciatura;214
+0;1;7;Terminó una licenciatura pero no se tituló;214
+0;1;8;Licenciatura titulado (a);214
+0;1;9;Estudios de posgrado;214
+0;1;10;No lo sabe;214
+1;0;27;Señala cuál es el nivel máximo de estudios de tu madre;NULL
+0;1;1;Sin instrucción formal;225
+0;1;2;Primaria sin terminar;225
+0;1;3;Primaria terminada;225
+0;1;4;Secundaria (o equivalente) terminada;225
+0;1;5;Bachillerato (o equivalente) terminada;225
+0;1;6;Inició licenciatura;225
+0;1;7;Terminó una licenciatura pero no se tituló;225
+0;1;8;Licenciatura titulado (a);225
+0;1;9;Estudios de posgrado;225
+0;1;10;No lo sabe;225
+1;0;28;Señala cuál es la principal ocupación de tu padre;NULL
+0;1;1;Labores del hogar;236
+0;1;2;Funcionario (a) o gerente en dependencia pública o empresa privada;236
+0;1;3;Dueño (a) de negocio, empresa o despacho establecido;236
+0;1;4;Profesor (a) de cualquier nivel escolar o investigador (a);236
+0;1;5;Empleado (a) de base o confianza en dependencia pública o empresa privada;236
+0;1;6;Obrero (a);236
+0;1;7;Campesino (a);236
+0;1;8;Artesano (a) o trabajador (a) de algún oficio, por su cuenta;236
+0;1;9;Vendedor (a);236
+0;1;10;Desempleado (a);236
+0;1;11;Jubilado (a) por edad o por incapacidad;236
+0;1;12;Finado (a);236
+0;1;13;No lo sabes;236
+1;0;29;Señala cuál es la principal ocupación de tu madre;NULL
+0;1;1;Labores del hogar;250
+0;1;2;Funcionario (a) o gerente en dependencia pública o empresa privada;250
+0;1;3;Dueño (a) de negocio, empresa o despacho establecido;250
+0;1;4;Profesor (a) de cualquier nivel escolar o investigador (a);250
+0;1;5;Empleado (a) de base o confianza en dependencia pública o empresa privada;250
+0;1;6;Obrero (a);250
+0;1;7;Campesino (a);250
+0;1;8;Artesano (a) o trabajador (a) de algún oficio, por su cuenta;250
+0;1;9;Vendedor (a);250
+0;1;10;Desempleado (a);250
+0;1;11;Jubilado (a) por edad o por incapacidad;250
+0;1;12;Finado (a);250
+0;1;13;No lo sabes;250
+1;0;30;¿Principalmente, de quién dependes económicamente?;NULL
+0;1;1;De tu padre;264
+0;1;2;De tu madre;264
+0;1;3;De ambos padres;264
+0;1;4;Únicamente de ti mismo;264
+0;1;5;De algún hermano(a);264
+0;1;6;De otro familiar;264
+0;1;7;De un tutor que no es tu familiar;264
+0;1;8;Otro;264
+1;0;31;¿Cuántas personas contribuyen al sostenimiento de tu hogar?;NULL
+0;1;1;Uno;273
+0;1;2;Dos;273
+0;1;3;Tres;273
+0;1;4;Cuatro;273
+0;1;5;Cinco;273
+0;1;6;Seis o más;273
+1;0;32;¿A cuánto asciende el ingreso mensual total de tu hogar?;NULL
+0;1;1;Menos de $3000;280
+0;1;2;Entre $3001 y $5000;280
+0;1;3;Entre $5001 y $7000;280
+0;1;4;Entre $7001 y $9000;280
+0;1;5;Entre $9001 y $11000;280
+0;1;6;Más de $11000;280
+0;1;7;No lo sabe;280
+1;0;33;¿Cuántas personas incluyéndote, dependen económicamente de ese ingreso?;NULL
+0;1;1;Una;288
+0;1;2;Dos;288
+0;1;3;Tres;288
+0;1;4;Cuatro;288
+0;1;5;Cinco;288
+0;1;6;Seis o más;288
+1;0;34;¿Trabajas?;NULL
+0;1;1;Sí, permanentemente;295
+0;1;2;Sí, eventualmente;295
+0;1;3;No;295
+1;0;35;Trabajas en;NULL
+0;1;1;Una empresa pública;299
+0;1;2;Una empresa privada;299
+0;1;3;Un negocio familiar;299
+0;1;4;Por tu cuenta;299
+0;1;5;Otra;299
+0;1;6;No aplica;299
+1;0;36;¿Cuántas horas trabajas en promedio, a la semana?;NULL
+0;1;1;Menos de 6 horas;306
+0;1;2;Entre 6 y 12 horas;306
+0;1;3;Entre 13 y 20 horas;306
+0;1;4;Entre 21 y 25 horas;306
+0;1;5;Entre 26 y 30 horas;306
+0;1;6;Entre 31 y 35 horas;306
+0;1;7;Entre 36 y 40 horas;306
+0;1;8;No aplica;306
+1;0;37;¿Tu familia u otra persona te podría sostener económicamente si tú quisieras dejar de trabajar?;NULL
+0;1;1;Sí;315
+0;1;2;No;315
+0;1;3;No aplica;315
+1;0;38;La vivienda en la que has habitado los últimos tres años es;NULL
+0;1;1;Casa propia (totalmente pagada);319
+0;1;2;Casa propia (con hipoteca);319
+0;1;3;Casa rentada;319
+0;1;4;Casa prestada;319
+0;1;5;Otro;319
+1;0;39;Número de cuartos que hay en la vivienda sin contar baño o cocina;NULL
+0;1;1;Uno ;325
+0;1;2;Dos;325
+0;1;3;Tres;325
+0;1;4;Cuatro ;325
+0;1;5;Cinco;325
+0;1;6;Seis;325
+0;1;7;Siete o más;325
+1;0;40;Las paredes de tu casa son de;NULL
+0;1;1;Ladrillo;333
+0;1;2;Block;333
+0;1;3;Adobe;333
+0;1;4;Madera;333
+0;1;5;Otra;333
+1;0;41;Los pisos de tu casa son de;NULL
+0;1;1;Tierra;339
+0;1;2;Concreto;339
+0;1;3;Mosaico;339
+0;1;4;Duela;339
+0;1;5;Otro;339
+1;0;42;Los techos de tu casa son de;NULL
+0;1;1;Concreto;345
+0;1;2;Lámina de asbesto;345
+0;1;3;Lámina galvanizada;345
+0;1;4;Lámina de cartón;345
+0;1;5;Madera;345
+0;1;6;Otra;345
+1;0;43;¿Cuántas personas habitan donde vives?;NULL
+0;1;1;Una;352
+0;1;2;Dos;352
+0;1;3;Tres;352
+0;1;4;Cuatro;352
+0;1;5;Cinco;352
+0;1;6;Seis;352
+0;1;7;Siete o más;352
+1;0;44;¿Con cuántas personas compartes el cuarto donde duermes?;NULL
+0;1;1;Ninguna;360
+0;1;2;Una;360
+0;1;3;Dos;360
+0;1;4;Tres o más;360
+1;0;45;Servicios con que cuentas en tu casa y/o comunidad;NULL
+0;0;1;Pavimento;365
+0;1;1;Sí;366
+0;1;2;No;366
+0;0;2;Luz;365
+0;1;1;Sí;369
+0;1;2;No;369
+0;0;3;Agua;365
+0;1;1;Sí;372
+0;1;2;No;372
+0;0;4;Drenaje;365
+0;1;1;Sí;375
+0;1;2;No;375
+0;0;5;Alumbrado público;365
+0;1;1;Sí;378
+0;1;2;No;378
+0;0;6;Correo;365
+0;1;1;Sí;381
+0;1;2;No;381
+0;0;7;Recolección de basura;365
+0;1;1;Sí;385
+0;1;2;No;385
+0;0;8;Vigilancia;365
+0;1;1;Sí;387
+0;1;2;No;387
+1;0;46;¿De qué bienes y servicios disfrutas en tu vivienda?;NULL
+0;0;1;Refrigerador;390
+0;1;1;Sí;391
+0;1;2;No;391
+0;0;2;Lavadora de ropa;390
+0;1;1;Sí;394
+0;1;2;No;394
+0;0;3;Secadora de ropa;390
+0;1;1;Sí;397
+0;1;2;No;397
+0;0;4;Lavadora de trastes;390
+0;1;1;Sí;400
+0;1;2;No;400
+0;0;5;Calentador de agua;390
+0;1;1;Sí;403
+0;1;2;No;403
+0;0;6;Línea telefónica;390
+0;1;1;Sí;406
+0;1;2;No;406
+0;0;7;Teléfono celular;390
+0;1;1;Sí;409
+0;1;2;No;409
+0;0;8;Videograbadora;390
+0;1;1;Sí;412
+0;1;2;No;412
+0;0;9;Televisión por cable;390
+0;1;1;Sí;415
+0;1;2;No;415
+0;0;10;Equipo de sonido;390
+0;1;1;Sí;418
+0;1;2;No;418
+0;0;11;Horno de microondas;390
+0;1;1;Sí;421
+0;1;2;No;421
+0;0;12;Computadora;390
+0;1;1;Sí;424
+0;1;2;No;424
+0;0;13;Internet;390
+0;1;1;Sí;427
+0;1;2;No;427
+0;0;14;Automóvil familiar;390
+0;1;1;Sí;430
+0;1;2;No;430
+0;0;15;Automóvil propio;390
+0;1;1;Sí;433
+0;1;2;No;433
+0;0;16;Personal de servicio de planta o entrada por salida;390
+0;1;1;Sí;436
+0;1;2;No;436
+1;0;47;¿Estás bajo algún tratamiento médico prolongado o permanente?;NULL
+0;1;1;Sí;439
+0;1;2;No;439
+1;0;48;¿Te han prescrito algún medicamento para dormir, estar en calma, lograr una mayor actividad, etc?;NULL
+0;1;1;Sí;442
+0;1;2;No;442
+1;0;49;¿Cómo te transportarás a la universidad?;NULL
+0;1;1;En transporte urbano;445
+0;1;2;En auto familiar;445
+0;1;3;En auto propio;445
+0;1;4;En el auto de mis amigos;445
+0;1;5;Caminando;445
+0;1;6;Otro;445
+1;0;50;¿Cuánto tiempo emplearás diariamente en transporte para ir y venir a la universidad?;NULL
+0;1;1;Entre 15 minutos y media hora;452
+0;1;2;Entre media hora y una hora;452
+0;1;3;Entre una hora y hora y media;452
+0;1;4;Entre hora y media y dos horas;452
+0;1;5;Entre dos y dos horas y media;452
+0;1;6;Entre dos horas y media y tres horas;452
+0;1;7;Más de tres horas;452
+1;0;51;¿Cuál es la actividad más frecuente que realizas en la biblioteca?;NULL
+0;1;1;Estudiar individualmente;460
+0;1;2;Realizar tareas individualmente;460
+0;1;3;Estudiar en equipo;460
+0;1;4;Realizar tareas en equipo;460
+0;1;5;Pasar apuntes;460
+0;1;6;Solicitar préstamos a domicilio;460
+0;1;7;Usar servicio de fotocopiado;460
+0;1;8;Otra;460
+1;0;52;¿Con qué frecuencia lees el periódico?;NULL
+0;1;1;Nunca;469
+0;1;2;Rara vez (ni siquiera una vez al mes);469
+0;1;3;Una vez al mes;469
+0;1;4;Una vez cada quince días;469
+0;1;5;Una vez cada semana;469
+0;1;6;Varias veces a la semana;469
+0;1;7;Diario;469
+1;0;53;¿Con qué frecuencia lees un libro que no está relacionado con tus estudios?;NULL
+0;1;1;Nunca;477
+0;1;2;Rara vez (ni siquiera una vez al año);477
+0;1;3;Cada año;477
+0;1;4;Cada seis meses;477
+0;1;5;Cada tres meses;477
+0;1;6;Cada mes;477
+0;1;7;Cada quince días;477
+0;1;8;Cada semana;477
+1;0;54;En promedio, el tiempo al día que lees es;NULL
+0;1;1;Máximo media hora;486
+0;1;2;Entre media hora y una hora;486
+0;1;3;Entre una hora y dos horas;486
+0;1;4;Entre dos y tres horas;486
+0;1;5;Más de tres horas;486
+0;1;6;No lees;486
+1;0;55;En promedio diario ¿cuánto tiempo ves televisión?;NULL
+0;1;1;Nunca veo televisión;493
+0;1;2;Quince minutos;493
+0;1;3;Media hora;493
+0;1;4;Una hora;493
+0;1;5;Una hora y media;493
+0;1;6;Dos horas;493
+0;1;7;Más de dos horas;493
+1;0;56;Lee cuidadosamente cada afirmación y marca la opción de respuesta que estimes identifica mejor tu forma de estudiar.;NULL
+0;0;1;Al leer lo hago de manera crítica y obteniendo mis propias conclusiones;501
+0;1;1;Siempre;502
+0;1;2;Frecuentemente;502
+0;1;3;Raras veces;502
+0;1;4;Nunca;502
+0;0;2;Mantengo buenas relaciones con mis compañeros y maestros;501
+0;1;1;Siempre;507
+0;1;2;Frecuentemente;507
+0;1;3;Raras veces;507
+0;1;4;Nunca;507
+0;0;3;Falto a clases;501
+0;1;1;Siempre;512
+0;1;2;Frecuentemente;512
+0;1;3;Raras veces;512
+0;1;4;Nunca;512
+0;0;4;Tomo apuntes en clase;501
+0;1;1;Siempre;517
+0;1;2;Frecuentemente;517
+0;1;3;Raras veces;517
+0;1;4;Nunca;517
+0;0;5;Aspectos emocionales o personales me impiden concentrarme en el estudio;501
+0;1;1;Siempre;522
+0;1;2;Frecuentemente;522
+0;1;3;Raras veces;522
+0;1;4;Nunca;522
+0;0;6;Copio a mis compañeros las respuestas de los ejercicios que pide el profesor;501
+0;1;1;Siempre;527
+0;1;2;Frecuentemente;527
+0;1;3;Raras veces;527
+0;1;4;Nunca;527
+0;0;7;Cuando estudio, repito mentalmente o en voz alta, y con libro cerrado, el material más relevante;501
+0;1;1;Siempre;532
+0;1;2;Frecuentemente;532
+0;1;3;Raras veces;532
+0;1;4;Nunca;532
+0;0;8;Intento aprovechar al máximo mis estudios;501
+0;1;1;Siempre;537
+0;1;2;Frecuentemente;537
+0;1;3;Raras veces;537
+0;1;4;Nunca;537
+0;0;9;Aprovecho adecuadamente las horas libres entre clases;501
+0;1;1;Siempre;542
+0;1;2;Frecuentemente;542
+0;1;3;Raras veces;542
+0;1;4;Nunca;542
+0;0;10;Al leer mis apuntes, fácilmente distingo lo más importante para estudiar;501
+0;1;1;Siempre;547
+0;1;2;Frecuentemente;547
+0;1;3;Raras veces;547
+0;1;4;Nunca;547
+0;0;11;Me resulta difícil tomar decisiones respecto a mis estudios;501
+0;1;1;Siempre;552
+0;1;2;Frecuentemente;552
+0;1;3;Raras veces;552
+0;1;4;Nunca;552
+0;0;12;Al trabajar en equipo, me distraigo fácilmente en temas diferentes al estudio;501
+0;1;1;Siempre;557
+0;1;2;Frecuentemente;557
+0;1;3;Raras veces;557
+0;1;4;Nunca;557
+0;0;13;Me gusta trabajar en equipo;501
+0;1;1;Siempre;562
+0;1;2;Frecuentemente;562
+0;1;3;Raras veces;562
+0;1;4;Nunca;562
+0;0;14;Encuentro agradable el ambiente de mi escuela;501
+0;1;1;Siempre;567
+0;1;2;Frecuentemente;567
+0;1;3;Raras veces;567
+0;1;4;Nunca;567
+0;0;15;Estoy consciente del tiempo que debo dedicar al estudio cada día;501
+0;1;1;Siempre;572
+0;1;2;Frecuentemente;572
+0;1;3;Raras veces;572
+0;1;4;Nunca;572
+0;0;16;Pido prestados apuntes a mis compañeros porque los míos son malos;501
+0;1;1;Siempre;577
+0;1;2;Frecuentemente;577
+0;1;3;Raras veces;577
+0;1;4;Nunca;577
+0;0;17;Me quedo con dudas por temor a preguntar al profesor;501
+0;1;1;Siempre;582
+0;1;2;Frecuentemente;582
+0;1;3;Raras veces;582
+0;1;4;Nunca;582
+0;0;18;En la biblioteca, en lugar de estudiar, me distraigo fácilmente;501
+0;1;1;Siempre;587
+0;1;2;Frecuentemente;587
+0;1;3;Raras veces;587
+0;1;4;Nunca;587
+0;0;19;Investigo o leo por mi propia iniciativa aspectos relacionados con mis materias;501
+0;1;1;Siempre;592
+0;1;2;Frecuentemente;592
+0;1;3;Raras veces;592
+0;1;4;Nunca;592
+0;0;20;Avanzo en mis estudios me convenzo que hice una buena elección profesional;501
+0;1;1;Siempre;597
+0;1;2;Frecuentemente;597
+0;1;3;Raras veces;597
+0;1;4;Nunca;597
+0;0;21;Dejo para el último momento la realización de mis tareas escolares;501
+0;1;1;Siempre;602
+0;1;2;Frecuentemente;602
+0;1;3;Raras veces;602
+0;1;4;Nunca;602
+0;0;22;Trabajo bien en equipos que establecen metas;501
+0;1;1;Siempre;607
+0;1;2;Frecuentemente;607
+0;1;3;Raras veces;607
+0;1;4;Nunca;607
+0;0;23;Mis profesores tienen una buena opinión de mí como estudiante;501
+0;1;1;Siempre;612
+0;1;2;Frecuentemente;612
+0;1;3;Raras veces;612
+0;1;4;Nunca;612
+0;0;24;En la clase pregunto por la hora;501
+0;1;1;Siempre;617
+0;1;2;Frecuentemente;617
+0;1;3;Raras veces;617
+0;1;4;Nunca;617
+0;0;25;Al estudiar en un libro de texto, realizo los ejercicios que ahí se sugieren;501
+0;1;1;Siempre;622
+0;1;2;Frecuentemente;622
+0;1;3;Raras veces;622
+0;1;4;Nunca;622
+0;0;26;Estoy convencido(a) de que me gusta ir a la escuela y estudiar;501
+0;1;1;Siempre;627
+0;1;2;Frecuentemente;627
+0;1;3;Raras veces;627
+0;1;4;Nunca;627
+0;0;27;Tomo en cuenta todas mis materias cuando organizo mi tiempo;501
+0;1;1;Siempre;632
+0;1;2;Frecuentemente;632
+0;1;3;Raras veces;632
+0;1;4;Nunca;632
+0;0;28;Trabajo bien en equipos que planean tareas;501
+0;1;1;Siempre;637
+0;1;2;Frecuentemente;637
+0;1;3;Raras veces;637
+0;1;4;Nunca;637
+0;0;29;Me desvelo estudiando para los exámenes;501
+0;1;1;Siempre;642
+0;1;2;Frecuentemente;642
+0;1;3;Raras veces;642
+0;1;4;Nunca;642
+0;0;30;En el lugar donde estudio hay ruidos que me distraen;501
+0;1;1;Siempre;647
+0;1;2;Frecuentemente;647
+0;1;3;Raras veces;647
+0;1;4;Nunca;647
+0;0;31;Estudio con suficiente anticipación para los exámenes;501
+0;1;1;Siempre;652
+0;1;2;Frecuentemente;652
+0;1;3;Raras veces;652
+0;1;4;Nunca;652
+0;0;32;El trabajo que voy a realizar como profesional me parece interesante y creativo;501
+0;1;1;Siempre;657
+0;1;2;Frecuentemente;657
+0;1;3;Raras veces;657
+0;1;4;Nunca;657
+0;0;33;Planeo mis actividades escolares;501
+0;1;1;Siempre;662
+0;1;2;Frecuentemente;662
+0;1;3;Raras veces;662
+0;1;4;Nunca;662
+0;0;34;Trabajo bien en equipos que cumplen fechas límite;501
+0;1;1;Siempre;667
+0;1;2;Frecuentemente;667
+0;1;3;Raras veces;667
+0;1;4;Nunca;667
+0;0;35;Para aclarar mis dudas, pregunto al profesor;501
+0;1;1;Siempre;672
+0;1;2;Frecuentemente;672
+0;1;3;Raras veces;672
+0;1;4;Nunca;672
+0;0;36;Cuando estudio me distraigo fácilmente con otras cosas;501
+0;1;1;Siempre;677
+0;1;2;Frecuentemente;677
+0;1;3;Raras veces;677
+0;1;4;Nunca;677
+0;0;37;Practico lo aprendido;501
+0;1;1;Siempre;682
+0;1;2;Frecuentemente;682
+0;1;3;Raras veces;682
+0;1;4;Nunca;682
+0;0;38;En los exámenes sucede que me preguntan temas que no revisé;501
+0;1;1;Siempre;687
+0;1;2;Frecuentemente;687
+0;1;3;Raras veces;687
+0;1;4;Nunca;687
+0;0;39;A la hora de estudiar para los exámenes, lamento no tener los apuntes de clase;501
+0;1;1;Siempre;692
+0;1;2;Frecuentemente;692
+0;1;3;Raras veces;692
+0;1;4;Nunca;692
+0;0;40;Entrego puntualmente las tareas o trabajos que dejan los profesores;501
+0;1;1;Siempre;697
+0;1;2;Frecuentemente;697
+0;1;3;Raras veces;697
+0;1;4;Nunca;697
+0;0;41;Me siento seguro (a) de mis conocimientos antes de iniciar un examen;501
+0;1;1;Siempre;702
+0;1;2;Frecuentemente;702
+0;1;3;Raras veces;702
+0;1;4;Nunca;702
+0;0;42;Tengo presente mi horario de manera que sé cual es la actividad planeada para determinada hora;501
+0;1;1;Siempre;707
+0;1;2;Frecuentemente;707
+0;1;3;Raras veces;707
+0;1;4;Nunca;707
+0;0;43;Realizó más ejercicios que los que se me asignan;501
+0;1;1;Siempre;712
+0;1;2;Frecuentemente;712
+0;1;3;Raras veces;712
+0;1;4;Nunca;712
+0;0;44;Antes de ponerme a estudiar, me aseguro de tener lo necesario para realizar la actividad escolar (calculadora, goma, etc.);501
+0;1;1;Siempre;717
+0;1;2;Frecuentemente;717
+0;1;3;Raras veces;717
+0;1;4;Nunca;717
+0;0;45;Me presento a clase puntualmente el primer día de actividades;501
+0;1;1;Siempre;722
+0;1;2;Frecuentemente;722
+0;1;3;Raras veces;722
+0;1;4;Nunca;722
+0;0;46;Escribo de una manera legible y ordenada, mis respuestas en los exámenes;501
+0;1;1;Siempre;727
+0;1;2;Frecuentemente;727
+0;1;3;Raras veces;727
+0;1;4;Nunca;727
+0;0;47;Me siento frustrado (a) como estudiante;501
+0;1;1;Siempre;732
+0;1;2;Frecuentemente;732
+0;1;3;Raras veces;732
+0;1;4;Nunca;732
+0;0;48;Realizo con mis compañeros sesiones de estudio en equipo;501
+0;1;1;Siempre;737
+0;1;2;Frecuentemente;737
+0;1;3;Raras veces;737
+0;1;4;Nunca;737
+0;0;49;Reviso mis apuntes oportunamente antes de entrar a clase;501
+0;1;1;Siempre;742
+0;1;2;Frecuentemente;742
+0;1;3;Raras veces;742
+0;1;4;Nunca;742
+0;0;50;Me intereso por las materias que llevo este semestre;501
+0;1;1;Siempre;747
+0;1;2;Frecuentemente;747
+0;1;3;Raras veces;747
+0;1;4;Nunca;747
+0;0;51;Dedico suficiente tiempo fuera de clase para estudiar mis materias;501
+0;1;1;Siempre;752
+0;1;2;Frecuentemente;752
+0;1;3;Raras veces;752
+0;1;4;Nunca;752
+0;0;52;Al iniciar el semestre defino claramente mis objetivos escolares;501
+0;1;1;Siempre;757
+0;1;2;Frecuentemente;757
+0;1;3;Raras veces;757
+0;1;4;Nunca;757
+0;0;53;Sólo estudio cuando tengo la presión de un examen;501
+0;1;1;Siempre;762
+0;1;2;Frecuentemente;762
+0;1;3;Raras veces;762
+0;1;4;Nunca;762
+0;0;54;El lugar donde estudio tiene objetos que me distraen (fotografías, televisión, etc.);501
+0;1;1;Siempre;767
+0;1;2;Frecuentemente;767
+0;1;3;Raras veces;767
+0;1;4;Nunca;767
+0;0;55;Para estudiar reviso libros adicionales a los que indica el profesor;501
+0;1;1;Siempre;772
+0;1;2;Frecuentemente;772
+0;1;3;Raras veces;772
+0;1;4;Nunca;772
+0;0;56;Considero que mis clases son interesantes;501
+0;1;1;Siempre;777
+0;1;2;Frecuentemente;777
+0;1;3;Raras veces;777
+0;1;4;Nunca;777
+0;0;57;Siento que el día no me rinde para terminar mis actividades escolares;501
+0;1;1;Siempre;782
+0;1;2;Frecuentemente;782
+0;1;3;Raras veces;782
+0;1;4;Nunca;782
+0;0;58;Contesto de manera clara y precisa las preguntas de los exámenes;501
+0;1;1;Siempre;787
+0;1;2;Frecuentemente;787
+0;1;3;Raras veces;787
+0;1;4;Nunca;787
+0;0;59;Estudio sólo para pasar los exámenes;501
+0;1;1;Siempre;792
+0;1;2;Frecuentemente;792
+0;1;3;Raras veces;792
+0;1;4;Nunca;792
+0;0;60;Escucho con atención lo que dice el maestro en clase;501
+0;1;1;Siempre;797
+0;1;2;Frecuentemente;797
+0;1;3;Raras veces;797
+0;1;4;Nunca;797
+0;0;61;Cuando me pongo a estudiar, hago caso omiso de lo que ocurre a mí alrededor;501
+0;1;1;Siempre;802
+0;1;2;Frecuentemente;802
+0;1;3;Raras veces;802
+0;1;4;Nunca;802
+0;0;62;Copio los esquemas, ejemplos y anotaciones importantes que escribe el profesor;501
+0;1;1;Siempre;807
+0;1;2;Frecuentemente;807
+0;1;3;Raras veces;807
+0;1;4;Nunca;807
+0;0;63;Utilizo una agenda y un reloj para organizar mis actividades;501
+0;1;1;Siempre;812
+0;1;2;Frecuentemente;812
+0;1;3;Raras veces;812
+0;1;4;Nunca;812
+0;0;64;Mis apuntes son breves y concisos;501
+0;1;1;Siempre;817
+0;1;2;Frecuentemente;817
+0;1;3;Raras veces;817
+0;1;4;Nunca;817
+0;0;65;Mis compañeros tienen una buena opinión de mí como estudiante;501
+0;1;1;Siempre;822
+0;1;2;Frecuentemente;822
+0;1;3;Raras veces;822
+0;1;4;Nunca;822
+0;0;66;Mi escritorio o lugar de estudio está desorganizado;501
+0;1;1;Siempre;827
+0;1;2;Frecuentemente;827
+0;1;3;Raras veces;827
+0;1;4;Nunca;827
+0;0;67;En un examen planeo mentalmente la respuesta antes de escribirla;501
+0;1;1;Siempre;832
+0;1;2;Frecuentemente;832
+0;1;3;Raras veces;832
+0;1;4;Nunca;832
+0;0;68;Relaciono el tema estudiado con la vida diaria;501
+0;1;1;Siempre;837
+0;1;2;Frecuentemente;837
+0;1;3;Raras veces;837
+0;1;4;Nunca;837
+0;0;69;Todos los días anticipo y programo las actividades que voy a realizar;501
+0;1;1;Siempre;842
+0;1;2;Frecuentemente;842
+0;1;3;Raras veces;842
+0;1;4;Nunca;842
+0;0;70;Consigo oportunamente los libros y material que el maestro solicita en su clase;501
+0;1;1;Siempre;847
+0;1;2;Frecuentemente;847
+0;1;3;Raras veces;847
+0;1;4;Nunca;847
+0;0;71;Participo en clase;501
+0;1;1;Siempre;852
+0;1;2;Frecuentemente;852
+0;1;3;Raras veces;852
+0;1;4;Nunca;852
+0;0;72;Cuando estudio me concentro desde el principio;501
+0;1;1;Siempre;857
+0;1;2;Frecuentemente;857
+0;1;3;Raras veces;857
+0;1;4;Nunca;857
+0;0;73;Me gusta pertenecer a equipos que trabajan bajo tensión;501
+0;1;1;Siempre;862
+0;1;2;Frecuentemente;862
+0;1;3;Raras veces;862
+0;1;4;Nunca;862
+0;0;74;Me agradad ayudar a estudiar a mis compañeros;501
+0;1;1;Siempre;867
+0;1;2;Frecuentemente;867
+0;1;3;Raras veces;867
+0;1;4;Nunca;867
+0;0;75;Tengo presente las fechas de inicio y terminación del semestre;501
+0;1;1;Siempre;872
+0;1;2;Frecuentemente;872
+0;1;3;Raras veces;872
+0;1;4;Nunca;872
+0;0;76;Tengo un lugar organizado para guardar mis libros y útiles escolares;501
+0;1;1;Siempre;877
+0;1;2;Frecuentemente;877
+0;1;3;Raras veces;877
+0;1;4;Nunca;877
+0;0;77;Mi antipatía por un profesor me impide aprender su materia;501
+0;1;1;Siempre;882
+0;1;2;Frecuentemente;882
+0;1;3;Raras veces;882
+0;1;4;Nunca;882
+0;0;78;Mientras tomo notas pierdo puntos importantes de la explicación del maestro;501
+0;1;1;Siempre;887
+0;1;2;Frecuentemente;887
+0;1;3;Raras veces;887
+0;1;4;Nunca;887
+0;0;79;El trabajo en equipo me permite desarrollar mi creatividad;501
+0;1;1;Siempre;892
+0;1;2;Frecuentemente;892
+0;1;3;Raras veces;892
+0;1;4;Nunca;892
+0;0;80;Evito inscribirme con los maestros que gozan fama de exigentes;501
+0;1;1;Siempre;897
+0;1;2;Frecuentemente;897
+0;1;3;Raras veces;897
+0;1;4;Nunca;897
+0;0;81;Con anticipación al examen, reviso que tenga todo el material necesario para estudiar;501
+0;1;1;Siempre;902
+0;1;2;Frecuentemente;902
+0;1;3;Raras veces;902
+0;1;4;Nunca;902
+0;0;82;Al estudiar distingo claramente el qué, cómo y por qué de las cosas;501
+0;1;1;Siempre;907
+0;1;2;Frecuentemente;907
+0;1;3;Raras veces;907
+0;1;4;Nunca;907
+0;0;83;Me pongo muy nervioso (a) al presentar un examen;501
+0;1;1;Siempre;912
+0;1;2;Frecuentemente;912
+0;1;3;Raras veces;912
+0;1;4;Nunca;912
+0;0;84;En clase descubro con facilidad las ideas principales del tema;501
+0;1;1;Siempre;917
+0;1;2;Frecuentemente;917
+0;1;3;Raras veces;917
+0;1;4;Nunca;917
+0;0;85;Cuando tomo notas, hago cuadros y tablas para hacerlos más comprensibles;501
+0;1;1;Siempre;922
+0;1;2;Frecuentemente;922
+0;1;3;Raras veces;922
+0;1;4;Nunca;922
+0;0;86;Me gusta participar en actividades escolares complementarias;501
+0;1;1;Siempre;927
+0;1;2;Frecuentemente;927
+0;1;3;Raras veces;927
+0;1;4;Nunca;927
+0;0;87;El tiempo me alcanza para estudiar y tener actividades recreativas;501
+0;1;1;Siempre;932
+0;1;2;Frecuentemente;932
+0;1;3;Raras veces;932
+0;1;4;Nunca;932
+0;0;88;Tengo una carpeta o cuaderno para cada una de las asignaturas;501
+0;1;1;Siempre;937
+0;1;2;Frecuentemente;937
+0;1;3;Raras veces;937
+0;1;4;Nunca;937
+0;0;89;Cuando tengo que estudiar me siento cansado (a) y con sueño;501
+0;1;1;Siempre;942
+0;1;2;Frecuentemente;942
+0;1;3;Raras veces;942
+0;1;4;Nunca;942
+0;0;90;Me concentro plenamente cuando estudio;501
+0;1;1;Siempre;947
+0;1;2;Frecuentemente;947
+0;1;3;Raras veces;947
+0;1;4;Nunca;947
+1;0;57;Dispositivos con conexión a internet a los que tienes acceso de manera cotidiana;NULL
+0;0;1;Smartphone;952
+0;1;1;Sí;953
+0;1;2;No;953
+0;0;2;Laptop;952
+0;1;1;Sí;956
+0;1;2;No;956
+0;0;3;Computadora de Escritorio;952
+0;1;1;Sí;959
+0;1;2;No;959
+0;0;4;Consola de videojuegos;952
+0;1;1;Sí;962
+0;1;2;No;962
+0;0;5;Reproductor MP3 o Ipod;952
+0;1;1;Sí;965
+0;1;2;No;965
+0;0;6;Smart TV;952
+0;1;1;Sí;968
+0;1;2;No;968
+1;0;58;Pensando en la última semana, ¿usaste el internet para...?;NULL
+0;0;1;Chatear (Messenger, WhatsApp);971
+0;1;1;Sí;972
+0;1;2;No;972
+0;0;2;Convivir en redes sociales;971
+0;1;1;Sí;975
+0;1;2;No;975
+0;0;3;Escuchar música;971
+0;1;1;Sí;978
+0;1;2;No;978
+0;0;4;Ver videos;971
+0;1;1;Sí;981
+0;1;2;No;981
+0;0;5;Actividades de la escuela o trabajo;971
+0;1;1;Sí;984
+0;1;2;No;984
+0;0;6;Enviar y recibir correos;971
+0;1;1;Sí;987
+0;1;2;No;987
+0;0;7;Investigar sobre temas que te gusten;971
+0;1;1;Sí;990
+0;1;2;No;990
+0;0;8;Buscar información para resolver un problema;971
+0;1;1;Sí;993
+0;1;2;No;993
+0;0;9;Informarte de las noticias;971
+0;1;1;Sí;996
+0;1;2;No;996
+0;0;10;Subir fotos y videos;971
+0;1;1;Sí;999
+0;1;2;No;999
+0;0;11;Leer libros y revistas en línea;971
+0;1;1;Sí;1002
+0;1;2;No;1002
+0;0;12;Participar en foros;971
+0;1;1;Sí;1005
+0;1;2;No;1005

@@ -17,5 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call(DepartamentosSeeder::class);
         $this->call(AsignaturasSeeder::class);
         $this->call(EncuestaSeeder::class);
+        $this->call(CuestionarioSeeder::class);
+        $this->call(SivacoreSeeder::class);
     }
 }

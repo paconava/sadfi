@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('xtrajs'); ?>
 <script src="<?php echo e(asset('js/app.js')); ?>" defer></script>
 <?php $__env->stopSection(); ?>
