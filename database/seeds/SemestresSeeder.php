@@ -17,6 +17,8 @@ class SemestresSeeder extends Seeder
         $this->crearSemestre('20201');
         $this->crearSemestre('20211');
         $this->crearSemestre('20221');
+        $this->crearSemestre('20231');
+        $this->crearSemestre('20232');
     }
 
     public function crearSemestre($anio) {
