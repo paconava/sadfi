@@ -612,6 +612,8 @@ class AsignaturasSeeder extends Seeder
         $this->crearAsig(31, "TEMAS SELECTOS DE MECATRONICA I");
         $this->crearAsig(31, "TEMAS SELECTOS DE MECATRONICA II");
         $this->crearAsig(31, "TEMAS SELECTOS DE PROGRAMACION I");
+        $this->crearAsig(32, "INTRODUCCIÓN A INGENIERIA AEROESPACIAL");
+        $this->crearAsig(32, "MEDIO AMBIENTE AEROESPACIAL");
     }
 
     public function crearAsig($depto_id, $nombre) {

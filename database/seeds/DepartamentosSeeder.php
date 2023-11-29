@@ -44,7 +44,7 @@ class DepartamentosSeeder extends Seeder
         $this->crearDepto(29, 2, "Departamento de Asignaturas Socio-humanísticas");
         $this->crearDepto(30, 6, "Departamento de Ingeniería Industrial");
         $this->crearDepto(31, 6, "Departamento de Ingeniería Mecatrónica");
-        $this->crearDepto(32, 6, "Departamento de Ingeniería Aeroespacial");
+        $this->crearDepto(32, 7, "Ingeniería Aeroespacial");
     }
 
     public function crearDepto($id, $division_id, $nombre) {

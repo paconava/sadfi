@@ -19,6 +19,7 @@ class DivisionesSeeder extends Seeder
         $this->crearDivision(4, "División de Ingenierías Civil y Geomática","DICYG");
         $this->crearDivision(5, "División de Ingeniería Eléctrica","DIE");
         $this->crearDivision(6, "División de Ingeniería Mecánica e Industrial","DIMEI");
+        $this->crearDivision(7, "Unidad de Alta Tecnología", "UAT");
     }
 
     public function crearDivision($id, $nombre, $siglas) {
